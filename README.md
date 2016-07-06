@@ -5,16 +5,15 @@ A list of helpful back-end related questions you can use to interview potential 
 Inspired by the git-repo: https://github.com/darcyclarke/Front-end-Developer-Interview-Questions.git and
 [Paul Irish](http://paulirish.com) ([@paul_irish](http://twitter.com/paul_irish))
 
-@Version 1.0.1
+**NOTE** 
+This is inspired by the same repository but for the developer, all the questions that I've encountered are mentioned here.
 
-This repo contains a number of back-end interview questions that can be used when vetting potential candidates.
-It is by no means recommended to use every single question here on the same candidate (that would take hours).
-Choosing a few items from this list should help you vet the intended skills you require.
+This is heavily edited from the original repo and the questions here are mostly open ended. I've added a section for the puzzles that are commonly used. Pure programming questions are not mentioned here unless there is some significant Data Structure or Algorithm involved.  
 
-**Note:** Keep in mind that many of these questions are open ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
+The 
+**END NOTE** 
 
 ##<a name="toc">Table of Contents</a>
-* [Contributors](#contributors)
 * [General Questions](#general)
 * [Design Pattern Specific Questions](#dpspecific)
 	* [MVC](#mvcspecific)
