@@ -1,17 +1,12 @@
 Back-End Developer Interview Questions
 ======================================
 
-A list of helpful back-end related questions you can use to interview potential candidates.
-Inspired by the git-repo: https://github.com/darcyclarke/Front-end-Developer-Interview-Questions.git and
-[Paul Irish](http://paulirish.com) ([@paul_irish](http://twitter.com/paul_irish))
-
 **NOTE** 
-This is inspired by the same repository but for the developer, all the questions that I've encountered are mentioned here.
+This is modified from the fork on two important areas:
+1. Target Audience is the job applicant.
+2. The primary language is Python rather than PHP
 
-This is heavily edited from the original repo and the questions here are mostly open ended. I've added a section for the puzzles that are commonly used. Pure programming questions are not mentioned here unless there is some significant Data Structure or Algorithm involved.  
-
-The 
-**END NOTE** 
+Side Note: I've added a section for the puzzles that are commonly used. Pure programming questions are not mentioned here unless there is some significant Data Structure or Algorithm involved.  
 
 ##<a name="toc">Table of Contents</a>
 * [General Questions](#general)
