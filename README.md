@@ -52,6 +52,7 @@ Apart from the language section the document is intended to be as language, henc
 
 ### <a name="jscodeexamples">JS Code Examples:</a>
 
+* What does the code snippet prints?
 ```js
 (function(){
   var a = b = 3;
@@ -59,7 +60,9 @@ Apart from the language section the document is intended to be as language, henc
 
 console.log("a defined? " + (typeof a !== 'undefined'));
 console.log("b defined? " + (typeof b !== 'undefined'));
+```
 
+```
 //a defined? false
 //b defined? true
 //b = 3;
@@ -68,6 +71,7 @@ console.log("b defined? " + (typeof b !== 'undefined'));
 ```
 
 
+* Write the function which prints the following output.  
 ```JS
 
 console.log(mul(2)(3)(4)); // output : 24
