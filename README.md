@@ -52,7 +52,7 @@ Apart from the language section the document is intended to be as language, henc
 
 ### <a name="jscodeexamples">JS Code Examples:</a>
 
-* What does the code snippet prints?
+1. What does the code snippet prints?
 ```js
 (function(){
   var a = b = 3;
@@ -62,6 +62,7 @@ console.log("a defined? " + (typeof a !== 'undefined'));
 console.log("b defined? " + (typeof b !== 'undefined'));
 ```
 
+Output: 
 ```
 //a defined? false
 //b defined? true
@@ -71,14 +72,14 @@ console.log("b defined? " + (typeof b !== 'undefined'));
 ```
 
 
-* Write the function which prints the following output.  
+2. Write the function which prints the following output.  
 ```JS
 
 console.log(mul(2)(3)(4)); // output : 24
 console.log(mul(4)(3)(4)); // output : 48
 ```
-Below is code followed by an explanation how it works:
 
+Below is code followed by an explanation how it works:
 ```js
 function mul (x) {
   return function (y) { // anonymous function
@@ -90,11 +91,81 @@ function mul (x) {
 
 ```
 
+3. What is the difference between the following code samples?
+```js
+
+var foo = function() {
+  // Some code
+};
+function bar() {
+  // Some code
+};
+
+```
+
+4. What will the following code output?
+```js
+
+const arr = [10, 12, 15, 21];
+for (var i = 0; i < arr.length; i++) {
+  setTimeout(function() {
+    console.log('Index: ' + i + ', element: ' + arr[i]);
+  }, 3000);
+}
+```
+
+It outputs `Index : 4 , element : undefined`.
+
+5. How would you change the above snippet to make it print logically?
+
+ - ES6 way: 
+```js
+ const arr = [10, 12, 15, 21];
+for (let i = 0; i < arr.length; i++) {
+  // using the ES6 let syntax, it creates a new binding
+  // every single time the function is called
+  // read more here: http://exploringjs.com/es6/ch_variables.html#sec_let-const-loop-heads
+  setTimeout(function() {
+    console.log('The index of this number is: ' + i);
+  }, 3000);
+}
+```
+
+- other way
+```js
+
+const arr = [10, 12, 15, 21];
+for (var i = 0; i < arr.length; i++) {
+  // pass in the variable i so that each function 
+  // has access to the correct index
+  setTimeout(function(i_local) {
+    return function() {
+      console.log('The index of this number is: ' + i_local);
+    }
+  }(i), 3000);
+}
+```
+
+
+6.  Write the function which prints the following output.
+
+```js
+var addSix = createBase(6);
+addSix(10); // returns 16
+addSix(21); // returns 27
+```
+
+7. 
+
 **[[⬆]](#toc) return to Table of Contents**
 
 ### <a name="jsspecific">JS Specific Questions</a>
 
 * Describe two good uses - and pratices - for callback usage.
+* How to defer javascript loading on the frontend?
+* What is the default return value of js fuction when no return has been explicitly defined.
+* What is `self`? Why we need it seperately from `this`?
+* What is annonymous functions and why we need them? (deceration at run time or complie time)  
 
 **[[⬆]](#toc) return to Table of Contents**
 
@@ -132,25 +203,7 @@ function mul (x) {
 * Have you created or managed some web service?
 * What web service protocals do you know?
 
-#### <a name="csrcspecific">Common Server Response Codes</a>
 
-Question: Describe server response code 200. **Answer: ("OK") Evertying went ok. The entity-body, if any, is a representation of some resource.**
-
-Question: Describe server response code 201. **Answer: ("Created") A new resource was created at the client's request. The location header should contain a URI to the new resource and the entity-body should contain a representation of the newly created resource.**
-
-Question: Describe server response code 204. **Answer: ("No Content") The server declined to send back any status message or representation**
-
-Question: Describe server response code 301. **Answer: ("Moved Permanently") Client triggered an action on the server that caused the URI of a resource to change.**
-
-Question: Describe server response code 400. **Answer: ("Bad Request") A problem occured on the client side. The entity-body, if any, is a error message.**
-
-Quesiton: Describe server response code 401. **Answer: ("Unauthorized") The client faild to provide proper authentication for the requested resource.**
-
-Question: Descibe server response code 404. **Answer: ("Not Found") Client requested a URI that doesn't map to any resource.**
-
-Question: Describe server response code 409. **Answer: ("Conflict") Client attempted to put the servers resource into a impossable or inconsistant state.**
-
-Question: Descibe server response code 500 **Answer: ("Internal Server Error") A problem occured on the server side. The entity-body, if any, is a error message.**
 
 **[[⬆]](#toc) return to Table of Contents**
 
