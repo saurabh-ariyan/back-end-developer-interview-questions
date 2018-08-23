@@ -1,3 +1,4 @@
 - [Fake Google Drive](https://rajrkane.com/2018/08/06/how-i-built-a-google-docs-imitation/)
 - [Secure Rest API](https://www.toptal.com/nodejs/secure-rest-api-in-nodejs)
 - [CRUD API](https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/)
+- [Using Passport, Bcrypt, Express, & Handlebars in a Nodejs Full-Stack App for User Authentication](https://webcache.googleusercontent.com/search?q=cache:LbeCfwB9tg4J:https://medium.com/b0bbybaldi/using-passport-bcrypt-for-full-stack-app-user-authentication-fe30a013604e+&cd=1&hl=en&ct=clnk&gl=in)
