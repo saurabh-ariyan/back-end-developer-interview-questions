@@ -1,0 +1,3 @@
+- [Fake Google Drive](https://rajrkane.com/2018/08/06/how-i-built-a-google-docs-imitation/)
+- [Secure Rest API](https://www.toptal.com/nodejs/secure-rest-api-in-nodejs)
+- [CRUD API](https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/)
