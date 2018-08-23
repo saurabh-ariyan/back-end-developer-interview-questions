@@ -1,4 +1,6 @@
 - [Fake Google Drive](https://rajrkane.com/2018/08/06/how-i-built-a-google-docs-imitation/)
 - [Secure Rest API](https://www.toptal.com/nodejs/secure-rest-api-in-nodejs)
 - [CRUD API](https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/)
+-[JSON Web Token}(https://egghead.io/courses/json-web-token-jwt-authentication-with-node-js-and-auth0)
 - [Using Passport, Bcrypt, Express, & Handlebars in a Nodejs Full-Stack App for User Authentication](https://webcache.googleusercontent.com/search?q=cache:LbeCfwB9tg4J:https://medium.com/b0bbybaldi/using-passport-bcrypt-for-full-stack-app-user-authentication-fe30a013604e+&cd=1&hl=en&ct=clnk&gl=in)
+- [Build your own react navigator for RN](https://www.fullstackreact.com/articles/build-your-own-javascript-navigator-for-react-native/)
