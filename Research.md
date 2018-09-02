@@ -6,3 +6,4 @@
 - [Build your own react navigator for RN](https://www.fullstackreact.com/articles/build-your-own-javascript-navigator-for-react-native/)
 - [Build your own static site generator](https://smalldata.tech/blog/2018/08/16/building-a-simple-static-site-generator-using-node-js)
 -[chat app in react](https://www.youtube.com/watch?time_continue=1&v=jFNHerJqvFw)
+-[Full Stack Python App in 30 mins](https://www.youtube.com/watch?v=-FWuNnCe73g)
