@@ -155,7 +155,15 @@ addSix(10); // returns 16
 addSix(21); // returns 27
 ```
 
-7. 
+7. The primitive types are stored as the value themselves, unlike objects, which are stored as a reference. This has implications when performing equality checks.
+
+"dog" === "dog"; // true
+14 === 14; // true
+
+{} === {}; // false
+[] === []; // false
+(function () {}) === (function () {}); // false
+
 
 **[[⬆]](#toc) return to Table of Contents**
 
