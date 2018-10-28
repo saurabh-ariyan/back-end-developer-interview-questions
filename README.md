@@ -157,12 +157,31 @@ addSix(21); // returns 27
 
 7. The primitive types are stored as the value themselves, unlike objects, which are stored as a reference. This has implications when performing equality checks.
 
+```
 "dog" === "dog"; // true
 14 === 14; // true
 
 {} === {}; // false
 [] === []; // false
 (function () {}) === (function () {}); // false
+```
+
+8. A function is a special type of object, with some special properties, such as constructor and call.
+```
+const foo = function (baz) {};
+foo.name; // "foo"
+foo.length; // 1
+```
+And just like a normal objects, you can add new properties to the object:
+```
+foo.bar = "baz";
+foo.bar; // "baz"
+```
+This makes functions a first-class citizen, because it can be passed around, as arguments into other functions, just like any other objects could.
+
+Methods: A method is a object property that also happens to be a function.
+
+
 
 
 **[[⬆]](#toc) return to Table of Contents**
