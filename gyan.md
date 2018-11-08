@@ -10,8 +10,7 @@
    - This also means your forms might give validation error as they don't get all the data to post.
    - But you should not get any 5xx errors. 
    - Any processing you're doing on the db data, is not assuming the db data to be there in all cases. 
-   
-   
+   - Do not limit this to the database defaults. If you're looking for an image and the image is not found, your system should not give a 5xx error but should generate the output with sensible defaults. Or give a handled error. 
    
 -  Develop with dummy data, visibliy dummy data. *no accidents* 
    - valid emails in the development db can recieve your development emails, accidently. 
@@ -55,7 +54,6 @@
 
 ## API Error Messages and Error Codes :
 - Error messages are for the end user, the customer, should be things they can understand. 
-- Prefer all the error messages being displayed at one place, either front end or backend, whichever is easier to change. 
 - Error Codes are for the application to decide what to do next. 
 - Both Error codes and error messages are different from the HTTP error codes. These error codes can be anything you decide and are closely tied with your appication. 
 - The error message is almost necessary for any application, having a error code along with it helps in doing conditionals.
