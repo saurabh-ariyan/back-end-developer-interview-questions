@@ -22,7 +22,9 @@
    - Error handling of a variable in that record should not be in the DB fetch API but the API which processes this. 
 
 -  Use `GET` when you can say what you want in the terms of "get me x"
+-  For nested documents, filter can work great. So if `GET /tweets/` gets me a array of tweets with comments as foreign key then `GET /tweets?embed=comments` gets me the comments embedded in the tweets data array. 
 -  getters API should always support commonly used filters: paging the result by count, etc. 
+-  API response should not be expected in any particular order by default. Ordering if any should be passed as a argument in the url. 
 -  API response should support additional metadata and namespaces. 
    - GET /users/:id
    ```
@@ -77,4 +79,11 @@
 
 
 ## What goes where? Frontend or backend: 
-- In most cases, especiallly apps, I've found changing the backend will be way easier. 
+- In most cases, especiallly apps, I've found modifying the backend once deployed will be way easier. 
+- Frontend should ideally have everything you need to display an empty db.  
+- Any counts of a list of items can be part of API response, helps in pagination, etc. 
+- The structure in which data is displayed *need* not be same as in which it is sent from API. Last logged in : Yesterday, API response: datetime
+- Error message dispalyed to the end user should be in the API response and not generated based on HTTP code or error code.
+- Ideally even small dropdowns should be mapped to API calls. Any update in them can be handled easily. 
+
+
