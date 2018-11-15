@@ -85,5 +85,18 @@
 - The structure in which data is displayed *need* not be same as in which it is sent from API. Last logged in : Yesterday, API response: datetime
 - Error message dispalyed to the end user should be in the API response and not generated based on HTTP code or error code.
 - Ideally even small dropdowns should be mapped to API calls. Any update in them can be handled easily. 
+- Error messages can also be a json file that the front-end calls only one time when loading the site and stores in the front end based on the user preference of language. 
+- Error messages in some use case in the front end also makes sense. Your server and the front end device may have the same amount of memory!
+
+## Basics Security: 
+
+- You don’t want to store credit card numbers, health data or passwords in plain text! If it comes out, and it will, you will loose all the goodwill you have created with your customer base. 
+- If data is stored or transfered as plain text, if older/weaker encryption (please dont use md5 anymore) is used, or if data is decrypted carelessly, attackers can gain acces and exploit the data.
+- Authentication :
+  - if using JWT, ensure the ip address of the request and the ip address of the creator of session token is same?
+  - the token timeout should be optimum based on your use case, keeping a small timeout makes the user choose a weaker password and a very long timeout should not make sense. Last use vs the generated token timeout seems preferable. 
+  - use vulnerability detection services, synk.io or npm and yarn native service to keep a check on your package dependenices.
+  - 
+
 
 
