@@ -96,7 +96,7 @@
   - if using JWT, ensure the ip address of the request and the ip address of the creator of session token is same?
   - the token timeout should be optimum based on your use case, keeping a small timeout makes the user choose a weaker password and a very long timeout should not make sense. Last use vs the generated token timeout seems preferable. 
   - use vulnerability detection services, synk.io or npm and yarn native service to keep a check on your package dependenices.
-  - 
+  - [good link](https://medium.com/@nodepractices/were-under-attack-23-node-js-security-best-practices-e33c146cb87d)
 
 
 
