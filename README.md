@@ -8,18 +8,10 @@ Apart from the language section the document is intended to be as language, henc
 
 ## <a name="toc">Table of Contents</a>
 * [General Questions](#general)
-* [Design Pattern Specific Questions](#dpspecific)
-	* [MVC](#mvcspecific)
-	* [MVVM](#mvvmspecific)
-	* [Repository](#repospecific)
-	* [Dependency Injection](#dispecific)
-	* [Visitor](#vspecific)
+* [Design Pattern Questions](#dpspecific)
 * [JS Code examples](#jscodeexamples)
 * [JS Specific Questions](#jsspecific)
 * [Database Specific Questions](#databasespecific)
-* [ORM Specific Questions](#ormspecific)
-	* [Doctrine](#doctrine)
-* [HTTP Specific Questions](#httpspecific)
 * [Operating System Specific Questions](#osespecific)
 * [Web Services Specific Questions](#webservicesespecific)
 	* [Common Server Response Codes](#csrcspecific)
@@ -31,7 +23,7 @@ Apart from the language section the document is intended to be as language, henc
 
 * What did you learn yesterday/this week? Or most recently?
 * How do you go about testing your JS code?
-* Have you ever looked at the source code of the libraries/frameworks you use?
+* What are the common libraries or frameworks you use for end to end developemnet? : ideally should start with server framework, front end framework, db orm, db manipulations , deployment tech, cache handling, testing, logging and error reporting. 
 * When do you optimize your code?
 * What's the biggest problem faced on your projects and how did you solve it?
 * What do you consider one of your failures in your current job?
