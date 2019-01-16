@@ -23,22 +23,20 @@ Apart from the language section the document is intended to be as language, henc
 
 * What did you learn yesterday/this week? Or most recently?
 * How do you go about testing your JS code?
-* What are the common libraries or frameworks you use for end to end developemnet? : ideally should start with server framework, front end framework, db orm, db manipulations , deployment tech, cache handling, testing, logging and error reporting. 
-* When do you optimize your code?
-* What's the biggest problem faced on your projects and how did you solve it?
+* What are the common libraries or frameworks you use for end to end developemnet? : 
+
+	ideally should include server framework, front end framework, db orm, db manipulations , deployment tech, cache handling, testing, logging and error reporting. 
+* When do you optimize your code? What kind of process you follow for it? : 
+
+	should include some kind of perf monitorining. 
+	
+* What's the most recent big problem faced on your current projects and how did you solve it? Should be in last 2 weeks.
 * What do you consider one of your failures in your current job?
 
 **[[⬆]](#toc) return to Table of Contents**
 
-### <a name="dpspecific">Design Pattern Specific Questions</a>
+### <a name="dpspecific"> System Design Pattern</a>
 
-* <a name="mvcspecific">MVC</a>
-    * Question: In the MVC design pattern what's M stands for? **Answer: M stands for Model, it is the data and data-management of the application.** 
-* <a name="mvvmspecific">MVVM</a>
-* <a name="repospecific">Repository</a>
-* <a name="dispecific">Dependency Injection</a>
-* <a name="vspecific">Visitor</a>
-    * The classes and/or objects participating in this pattern are? **Answer: Visitor, ConcreteVisitor, Element, ConcreteElement, ObjectStructure** 
 
 **[[⬆]](#toc) return to Table of Contents**
 
