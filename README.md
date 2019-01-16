@@ -52,6 +52,39 @@ Apart from the language section the document is intended to be as language, henc
 
 ### <a name="jscodeexamples">JS Code Examples:</a>
 
+What is the output here? Why?
+
+```  var text = 'outside';
+function logIt(){
+    console.log(text);
+    var text = 'inside';
+};
+logIt();
+```
+Output will be `undefined`. Variable declarations are hoisted only not the assignemts. 
+
+
+```
+<button id="btn-0">Button 1</button>
+<button id="btn-1">Button 2</button>
+<button id="btn-2">Button 3</button>
+
+<script type="text/javascript">
+  const prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+  for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+
+    // For each of our buttons, when the user clicks it...
+    document.getElementById(`btn-${btnNum}`).onclick = () => {
+
+      // Tell her what she's won!
+      alert(prizes[btnNum]);
+    };
+  }
+</script>
+```
+The loop does not stop until btnNum = 3. The inner function gets the value of btnNum 3 always as the btnNumber is not passed to the onClick function. It will always `alert(prize[3])` hence `undefined`
+
+
 1. What does the code snippet prints?
 ```js
 (function(){
