@@ -212,6 +212,7 @@ Methods: A method is a object property that also happens to be a function.
 ### <a name="jsspecific">JS Specific Questions</a>
 
 * Describe two good uses - and pratices - for callback usage.
+* what is mixin ? : Diamond Problem : make a seperate class for the things that you need in other classes. 
 * How to defer javascript loading on the frontend?
 * What is the default return value of js fuction when no return has been explicitly defined.
 * What is `self`? Why we need it seperately from `this`?
