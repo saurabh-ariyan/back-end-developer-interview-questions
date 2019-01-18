@@ -1,6 +1,6 @@
 # Things to keep in mind when building for production 
 
-display: a.props ? "block" : "none" === display : !a.props && none. 
+```display: a.props ? "block" : "none" === display : !a.props && none```
 
 ## Start from these: 
 -  Database Defaults: Each of the schema value in the your schema design should have proper and sensible defaults. 
