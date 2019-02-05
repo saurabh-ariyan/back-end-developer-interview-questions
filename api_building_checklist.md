@@ -1,5 +1,5 @@
 # Things to keep in mind when building for production 
-
+#### [Public APIs](https://public-apis.xyz/) is a good place to look for dummy data. 
 
 ## Start from these: 
 -  Database Defaults: Each of the schema value in the your schema design should have proper and sensible defaults. 
