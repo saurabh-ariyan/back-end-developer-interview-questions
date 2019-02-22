@@ -1,6 +1,9 @@
 # Things to keep in mind when building for production 
 #### [Public APIs](https://public-apis.xyz/) is a good place to look for dummy data. 
+### Read Before : 
+[Microsoft API guidelines](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md)
 
+**_Disclamier: _** These are intended to very _opinionated_ checklist, primarily refelecting my battle stories. 
 ## Start from these: 
 -  Database Defaults: Each of the schema value in the your schema design should have proper and sensible defaults. 
 -  Database values should always have single source of truth, updating one should ideally update this value's reference at all places it is fetched. 
@@ -16,7 +19,7 @@
    - valid emails in the development db can recieve your development emails, accidently. 
 -  Values which are configration depenedent should be defined in a seperate file. *staging url*
 
--  API calls should ideally do one thing + error handling that one thing. 
+-  API calls should ideally do one thing : error handling is also one thing, seperate it out in a function. 
    - DB fetch should also be an API call. 
    - Error handle the record not being there. 
    - Error handling of a variable in that record should not be in the DB fetch API but the API which processes this. 
