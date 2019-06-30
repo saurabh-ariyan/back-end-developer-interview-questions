@@ -5,6 +5,11 @@
 
 **_Disclamier: _** These are intended to very _opinionated_ checklist, primarily refelecting my battle stories. 
 ## Start from these: 
+
+- Fail Loudly. 
+- Fail Fast. 
+- Handle Failure from being exposed to the client. 
+----------------------------
 -  Database Defaults: Each of the schema value in the your schema design should have proper and sensible defaults. 
 -  Database values should always have single source of truth, updating one should ideally update this value's reference at all places it is fetched. 
 
