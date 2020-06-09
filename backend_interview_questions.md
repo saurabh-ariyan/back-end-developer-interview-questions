@@ -31,14 +31,16 @@
 
 ### <a name="golang"> golang </a>
 
-    - What is the string data type in the Golang language? Can I change a specific character in a string?
-    -  What happens when concatenating strings?
-    — how to effectively concatenate a lot of strings?
-    ```While Go does allow you to concatenate strings with the + operator, this can become pretty inefficient when concatenating a lot of strings together.
-        You can also use the strings.Join function if you have all of the strings ahead of time.
-        It is much more efficient to use a bytes.Buffer and then convert it to a string once you have concatenated everything.
-        ```
-    - What will happen when a concurrect map write occurs? How can this problem be solved?
-        ```Control access to the map with sync.RWMutex{}. Use this option if you have single reads and writes, not loops over the map
-        ```
-    - Should I lock a structure with a mutex if there is a concurrent write in a different fields of the struct?
+- What is the string data type in the Golang language? Can I change a specific character in a string?
+- What happens when concatenating strings?
+  — how to effectively concatenate a lot of strings?
+
+````While Go does allow you to concatenate strings with the + operator, this can become pretty inefficient when concatenating a lot of strings together.
+    You can also use the strings.Join function if you have all of the strings ahead of time.
+    It is much more efficient to use a bytes.Buffer and then convert it to a string once you have concatenated everything.
+    ```
+- What will happen when a concurrect map write occurs? How can this problem be solved?
+    ```Control access to the map with sync.RWMutex{}. Use this option if you have single reads and writes, not loops over the map
+    ```
+- Should I lock a structure with a mutex if there is a concurrent write in a different fields of the struct?
+````
