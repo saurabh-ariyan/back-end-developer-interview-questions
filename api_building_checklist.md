@@ -87,7 +87,7 @@
 
 
 ## What goes where? Frontend or backend: 
-- In most cases, especiallly apps, I've found modifying the backend once deployed will be way easier. 
+- In most cases, especiallly mobile apps, I've found modifying the backend once deployed will be way easier. 
 - Frontend should ideally have everything you need to display an empty db.  
 - Any counts of a list of items can be part of API response, helps in pagination, etc. 
 - The structure in which data is displayed *need* not be same as in which it is sent from API. Last logged in : Yesterday, API response: datetime
